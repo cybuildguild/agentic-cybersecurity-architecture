@@ -2,6 +2,8 @@
 //It will package the actions of the python file agentic_model,
 //  and store them
 
+
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0 < 0.9.0;
 
 contract agentic_smart_contract 
