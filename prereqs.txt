@@ -13,3 +13,5 @@ mkdir <project_name>
 cd <project_name>
 npm install truffle
 npx truffle init # This will initialize an empty smart contract project
+# Once you have written your smart contract in Solidity:
+npx truffle compile
