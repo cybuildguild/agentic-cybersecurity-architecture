@@ -1,12 +1,18 @@
 # agentic_model.py
 
+"""
+Goal: Package agent interactions as transactions
+
+Smart contracts can check agent behavior or override malicious outputs when system limits are crossed
+"""
+
 class AgenticSecurityAgent:
     def __init__(self):
         self.memory = []
         self.trust_threshold = 0.8
 
     def sense(self, input_data):
-        print("Collecting telemetry...")
+        print("Collecting telemetry...") #automated process of collecting data from distributed/remote sources
         return {"anomaly_score": 0.9, "source": "API-Gateway"}
 
     def reflect(self, data):
