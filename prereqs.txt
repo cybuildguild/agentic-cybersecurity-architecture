@@ -1,8 +1,9 @@
 Prerequisites to deploying a smart contract on Ethereum
 with Python, Truffle and web3py
 
-Followed GeeksforGeeks article:
+Resources:
 https://www.geeksforgeeks.org/ethical-hacking/deploy-a-smart-contract-on-ethereum-with-python-truffle-and-web3py/
+https://docs.soliditylang.org/en/latest/solidity-by-example.html
 
 Installations:
 1. Python3
