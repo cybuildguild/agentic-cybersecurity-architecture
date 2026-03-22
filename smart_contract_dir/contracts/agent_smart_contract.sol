@@ -22,14 +22,14 @@ contract agentic_smart_contract
         uint timestamp;
     }
 
-    address public overseer;
+    // Create a dynamically-sized storage array
+    Record[] public records;
 
-    // This declares a state variable that stores 
-    // a 'Record' struct for each possible address.
-    mapping(address => Record) public records;
-    
-    function packaging_actions() public pure returns (string memory)
+    function packaging_actions(string calldata _data, string calldata _decision, string calldata _action) public 
     {
-        return '';
+        //'Record({...})' creates a temporary Record
+        // object and 'records.push(...)' appends
+        // it to the end of 'records'.
+        records.push(Record({_data, _decision, _action, block.timestamp}));
     }
 }
