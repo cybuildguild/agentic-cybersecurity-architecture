@@ -8,6 +8,20 @@ pragma solidity >=0.5.0 < 0.9.0;
 
 contract agentic_smart_contract 
 {
+    // Declare a new complex type which will
+    // be used for variables later.
+    // It will represent a record of a single 
+    // agent's actions
+    struct Record {
+        // The following are string types as that is 
+        // the return type of those functions in
+        // agentic_model.py
+        string data;
+        string decision;
+        string action;
+        uint timestamp;
+    }
+
     function packaging_actions() public pure returns (string memory)
     {
         return '';
