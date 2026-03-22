@@ -15,3 +15,13 @@ npm install truffle
 npx truffle init # This will initialize an empty smart contract project
 # Once you have written your smart contract in Solidity:
 npx truffle compile
+
+Deploy the Smart Contract to the Blockchain
+# In order to deploy the smart contract, you need a 
+# migration script and truffle suite
+cd migrations/
+# Once you have written the migration script in JS:
+# in the terminal:
+npx truffle develop
+# Migrate the smart contract. In the terminal: 
+truffle(develop)> migrate
