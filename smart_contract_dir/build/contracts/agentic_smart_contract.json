@@ -7067,7 +7067,13 @@
     "name": "solc",
     "version": "0.8.21+commit.d9974bed.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "development": {
+      "host": "127.0.0.1",
+      "port": 7545,
+      "network_id": "*"
+    }
+  },
   "schemaVersion": "3.4.16",
   "updatedAt": "2026-03-22T20:40:09.011Z",
   "devdoc": {
