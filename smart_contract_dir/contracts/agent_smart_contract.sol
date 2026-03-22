@@ -27,9 +27,14 @@ contract agentic_smart_contract
 
     function packaging_actions(string calldata _data, string calldata _decision, string calldata _action) public 
     {
-        //'Record((...))' creates a temporary Record
+        //'Record({...})' creates a temporary Record
         // object and 'records.push(...)' appends
         // it to the end of 'records'.
-        records.push(Record((_data, _decision, _action, block.timestamp)));
+        records.push(Record({
+            data: _data,
+            decision: _decision, 
+            action: _action,
+            timestamp: block.timestamp
+        }));
     }
 }
