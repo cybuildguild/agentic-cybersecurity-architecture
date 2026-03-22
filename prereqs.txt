@@ -11,5 +11,5 @@ Installations:
 Set Up Project:
 mkdir <project_name>
 cd <project_name>
-npm install g-truffle
-truffle init # This will initialize an empty smart contract project
+npm install truffle
+npx truffle init # This will initialize an empty smart contract project
