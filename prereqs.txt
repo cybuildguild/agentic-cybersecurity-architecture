@@ -24,4 +24,4 @@ cd migrations/
 # in the terminal:
 npx truffle develop
 # Migrate the smart contract. In the terminal: 
-truffle(develop)> migrate
+truffle(develop)> migrate # to exit: .exit
