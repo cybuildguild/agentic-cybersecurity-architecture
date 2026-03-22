@@ -6,8 +6,6 @@ Goal: Package agent interactions as transactions
 Smart contracts can check agent behavior or override malicious outputs when system limits are crossed
 """
 
-# Python program to call the 
-# smart contract
 import json
 from web3 import Web3, HTTPProvider
 
@@ -42,11 +40,6 @@ with open(compiled_contract_path) as file:
 contract = web3.eth.contract(
     address = deployed_contract_address, abi = contract_abi)
 
-# Calling contract function (this is not persisted 
-# to the blockchain)
-output = contract.functions.agentic_smart_contract().call()
-
-print(output)
 
 class AgenticSecurityAgent:
     def __init__(self):
@@ -75,3 +68,13 @@ if __name__ == "__main__":
     decision = agent.reflect(data)
     action = agent.act(decision)
     print(f"Response: {action}")
+
+    # Calling contract function (this is not persisted 
+    # to the blockchain)
+    output = contract.functions.packaging_actions(
+        str(data),
+        str(decision),
+        str(action)
+    ).call()
+
+    print(output)
