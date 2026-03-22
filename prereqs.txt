@@ -1,0 +1,15 @@
+Prerequisites to deploying a smart contract on Ethereum
+with Python, Truffle and web3py
+
+Followed GeeksforGeeks article:
+https://www.geeksforgeeks.org/ethical-hacking/deploy-a-smart-contract-on-ethereum-with-python-truffle-and-web3py/
+
+Installations:
+1. Python3
+2. NodeJS
+
+Set Up Project:
+mkdir <project_name>
+cd <project_name>
+npm install g-truffle
+truffle init # This will initialize an empty smart contract project
