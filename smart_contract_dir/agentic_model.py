@@ -21,7 +21,7 @@ web3.eth.default_account = web3.eth.accounts[0]
 #to set the "from" for every transaction call)
 
 # Path to the compiled contract JSON file
-compiled_contract_path = '/Users/homepro/agentic-cybersecurity-architecture/agentic-cybersecurity-architecture/smart_contract_dir/build/contracts/agentic_smart_contract.json' 
+compiled_contract_path = 'agentic-cybersecurity-architecture/agentic-cybersecurity-architecture/smart_contract_dir/build/contracts/agentic_smart_contract.json' 
 
 # Deployed contract address (see `migrate` command output: 
 # `contract address`)
