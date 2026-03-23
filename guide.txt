@@ -1,0 +1,48 @@
+Instructions and prerequisites to deploying a smart contract on Ethereum
+with Python, Truffle and web3py
+
+Resources:
+https://www.geeksforgeeks.org/ethical-hacking/deploy-a-smart-contract-on-ethereum-with-python-truffle-and-web3py/
+https://docs.soliditylang.org/en/latest/solidity-by-example.html
+
+Installations:
+1. Python3
+2. NodeJS
+3. Web3
+
+Set Up Project:
+mkdir <project_name>
+cd <project_name>
+npm install truffle
+npx truffle init # This will initialize an empty smart contract project
+# Once you have written your smart contract in Solidity:
+npx truffle compile # This will output the contract to a JSON file in build/contracts.
+
+Deploy the Smart Contract to the Blockchain
+# In order to deploy the smart contract, you need a 
+# migration script and truffle suite
+cd migrations/
+# Once you have written the migration script in JS:
+# in the terminal:
+npx truffle develop
+# Migrate the smart contract. In the terminal: 
+truffle(develop)> migrate # DO NOT CLOSE THIS TERMINAL
+# The above command will update networks{} in the JSON file 
+# in build/contracts to include your deployed_contract_address.
+# Additionally, it creates a built-in, local personal blockchain 
+# that allows developers to test, deploy and interact with the 
+# smart contract without spending real gas fees or real money.
+# This is why we can write .transact() in agentic_model.py.
+
+# Utilize the port number found in the output of 
+# truffle(develop)> migrate for 
+# blockchain_address = 'http://127.0.0.1:<port_number>' 
+
+# Relocate agentic_model.py to same folder as <project_name>
+
+# Open another terminal (while the terminal with truffle(develop)> migrate is still open),
+# and type:
+python3 agentic_model.py
+
+
+# to exit truffle(develop)>: .exit
