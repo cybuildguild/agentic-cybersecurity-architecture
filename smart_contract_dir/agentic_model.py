@@ -75,6 +75,6 @@ if __name__ == "__main__":
         str(data),
         str(decision),
         str(action)
-    ).call()
+    ).transact()
 
     print(output)
