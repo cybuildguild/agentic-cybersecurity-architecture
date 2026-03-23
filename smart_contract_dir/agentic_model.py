@@ -15,7 +15,7 @@ blockchain_address = 'http://127.0.0.1:9545'
 # Client instance to interact with the blockchain
 web3 = Web3(HTTPProvider(blockchain_address)) 
 
-web3.eth.defaultAccount = web3.eth.accounts[0]
+web3.eth.default_account = web3.eth.accounts[0]
 
 # Setting the default account (so we don't need 
 #to set the "from" for every transaction call)
