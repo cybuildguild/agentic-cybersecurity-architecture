@@ -77,4 +77,6 @@ if __name__ == "__main__":
         str(action)
     ).transact()
 
-    print(output)
+    web3.eth.wait_for_transaction_receipt(output)
+    record = contract.functions.records(0).call()
+    print("Stored record:", record)
