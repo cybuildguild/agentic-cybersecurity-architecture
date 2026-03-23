@@ -22,6 +22,10 @@ Deploy the Smart Contract to the Blockchain
 # In order to deploy the smart contract, you need a 
 # migration script and truffle suite
 cd migrations/
+# Create a migration script. Must follow naming convention:
+# MUST HAVE: Numbered prefix (e.g. 2_deploy_contracts.js, 3_add_new_features,js).
+# MUST HAVE: File name purpose.
+
 # Once you have written the migration script in JS:
 # in the terminal:
 npx truffle develop
